@@ -1,1 +1,1 @@
-# m288_LB02
+Website startet mit start.html
