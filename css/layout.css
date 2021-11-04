@@ -93,6 +93,8 @@ p{
 
 .lead-text-small{
     font-size: 1.1rem; /* 16px */
+    margin-top: -3rem;
+    margin-bottom: 4.5rem;
 }
 
 .subtitle{

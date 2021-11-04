@@ -152,7 +152,7 @@ header i{
     font-size: 1.5rem;
     background-color: transparent;
     border: 0.3125rem solid #505050;
-    border-radius: 50rem;
+    border-radius: 100px;
     width: 100%;
 }
 .progress-bar {
@@ -352,6 +352,44 @@ header i{
 }
 
 /* formular */
+.form-control {
+    padding: 1rem 1.5rem;
+    font-size: 1.5rem;
+    color: #fafafa !important;
+    background-color: rgb(80, 80, 80, 0.4) !important;
+    border: 1px solid #505050 !important;
+    border-radius: 15px;
+    transition: border-color 0.15s ease-in-out, 0.15s ease-in-out;
+}
+.form-control:focus {
+    color: #fafafa;
+    background-color: rgb(80, 80, 80, 0.4);
+    border: 1px solid #505050;
+    outline: 0;
+    box-shadow: 0 0 0 0;
+}
+.form-control::-moz-placeholder {
+    color: #fafafa;
+    opacity: 1;
+}
+.form-control::placeholder {
+    color: #fafafa;
+    opacity: 1;
+}
+
+.form-control::-webkit-file-upload-button {
+    color: #fafafa;
+    background-color: #505050;
+    height: 100%;
+    padding: 1rem 1.5rem;
+    margin: -1rem -1.5rem;
+    margin-right: 1.5rem;
+}
+.form-control:hover:not(:disabled):not([readonly])::-webkit-file-upload-button {
+    color: #505050;
+    background-color: #fafafa;
+}
+
 
 /* footer */
 footer .link{

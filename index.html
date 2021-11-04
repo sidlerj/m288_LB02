@@ -25,7 +25,7 @@
 <body>
     <header>
         <!-- hintergrundmusik -->
-        <div class="visually-hidden-focusable">
+        <div class="visually-hidden-focusable" id="top">
             <audio autoplay id="hintergrundmusik" preload="auto">
                 <source src="media/audio/hintergrundmusik_2.wav" type="audio/wav">
                 <source src="media/audio/hintergrundmusik_2.ogg" type="audio/ogg">
@@ -73,7 +73,7 @@
                 <p class="lead">Lernende Mediamatikerin</p>
                 <div class="btn-group mt-sm-6 d-flex justify-content-around" role="group">
                     <!--<a href="html/lebenslauf.html"><button type="button" class="btn subtitle rounded-pill btn-light py-sm-2 px-sm-5 mx-sm-6 w-214rem">Lebenslauf</button></a>-->
-                    <a href="mailto:sidlerj@bzz.ch"><button type="button" class="btn subtitle rounded-pill btn-light py-sm-2 px-sm-5 mx-sm-6 w-214p">Kontakt</button></a>
+                    <a href="#kontakt"><button type="button" class="btn subtitle rounded-pill btn-light py-sm-2 px-sm-5 mx-sm-6 w-214p">Kontakt</button></a>
                     <a href="#meine_arbeiten"><button type="button" class="btn subtitle rounded-pill btn-dark py-sm-2 px-sm-5 mx-sm-6 w-214p">Arbeiten</button></a>
                 </div>
                 <div class="mt-5">
@@ -132,7 +132,7 @@
                         <div class="progress-bar" role="progressbar" style="width: 35%;" aria-valuenow="35" aria-valuemin="0" aria-valuemax="100">Photoshop</div>
                     </div>
                     <div class="progress mt-4">
-                        <div class="progress-bar" role="progressbar" style="width: 40%;" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100">HTML</div>
+                        <div class="progress-bar" role="progressbar" style="width: 40%;" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100">Programmieren</div>
                     </div>
                 </div>
             </div>
@@ -142,7 +142,7 @@
             <h2>Meine Arbeiten</h2>
             <div class="row row-cols-1 row-cols-md-2 g-4 d-flex justify-content-between">
         <!-- Col1 -->
-                <div class="col">
+                <div class="col mt-0">
                     <a type="button" data-bs-toggle="modal" data-bs-target="#fotostrecke_von_katzen">
                     <div class="card">
                         <img src="media/images/arbeiten/fotostrecke_von_katzen/DSC_0409_web.jpg" class="card-img-top rounded-0" alt="Katze mit Rosen im Vordergrund">
@@ -227,7 +227,7 @@
                     </div>
                 </div>
         <!-- Col2 -->
-                <div class="col">
+                <div class="col mt-0">
                     <a type="button" data-bs-toggle="modal" data-bs-target="#fotostrecke_winter_wonderland">
                         <div class="card">
                             <img src="media/images/arbeiten/fotostrecke_winter_wonderland/DSC_0462_web.jpg" class="card-img-top rounded-0" alt="Mädchen im Wald">
@@ -347,6 +347,35 @@
             </button>
          -->
         </div>
+
+        <div class="container-mx row" id="kontakt">
+            <h2>Kontakt</h2>
+            <p class="lead-text-small">Schreiben Sie mich an!</p>
+            <div>
+                <form>
+                    <div class="row mb-4">
+                        <div class="col">
+                            <input type="text" class="form-control" placeholder="Voller Name*" aria-label="Voller Name">
+                        </div>
+                        <div class="col">
+                            <input type="email" class="form-control" placeholder="Email*">
+                        </div>
+                    </div>
+                    <div class="mb-4">
+                        <input class="form-control" type="text" placeholder="Betreff*" aria-label="default input example">
+                    </div>
+                    <div class="mb-5">
+                        <input class="form-control" type="file" multiple>
+                    </div>
+                    <div class="">
+                        <textarea class="form-control" type="text" placeholder="Nachricht*" rows="5"></textarea>
+                    </div>
+                    <div>
+                        <button type="submit" class="btn subtitle rounded-pill btn-light py-sm-2 px-sm-5 my-sm-5 w-214p">Absenden</button>
+                    </div>
+                </form>
+            </div>
+        </div>
     </main>
 
     <footer>
@@ -356,7 +385,7 @@
                     <p>2021 Schweiz. Design by Julia Sidler.</p>
                 </div>
                 <div class="col me-4">
-                    <p class="text-end"><a class="link" href="mailto:sidlerj@bzz.ch">Schreiben Sie mir!</a></p>
+                    <p class="text-end"><a class="link" href="#top">Nach oben</a></p>
                 </div>
             </div>
         </div>
