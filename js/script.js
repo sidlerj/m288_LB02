@@ -4,10 +4,17 @@ const email = document.getElementById('Email');
 let formFields = [fullName, email]
 
 
-function errorMsg(){
-    if (document.getElementById('fullname').value == ""){
+function errorMsg() {
+    if (document.getElementById('fullname').value == "") {
+        document.getElementById("errorTextMsg").innerHTML = "Alle mit * markierte Felder müssen ausgefüllt werden!";
+    } if (document.getElementById('email').value == "") {
+        document.getElementById("errorTextMsg").innerHTML = "Alle mit * markierte Felder müssen ausgefüllt werden!";
+    } if (document.getElementById('Betreff').value == "") {
+        document.getElementById("errorTextMsg").innerHTML = "Alle mit * markierte Felder müssen ausgefüllt werden!";
+    } if (document.getElementById('textblock').value == "") {
         document.getElementById("errorTextMsg").innerHTML = "Alle mit * markierte Felder müssen ausgefüllt werden!";
     } else {
-        window.document.forms[0].reset();
+        document.getElementById("errorTextMsg").innerHTML = "";
     }
+    return window.document.forms[0].reset();
 }
