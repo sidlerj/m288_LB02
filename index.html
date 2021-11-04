@@ -352,27 +352,22 @@
             <h2>Kontakt</h2>
             <p class="lead-text-small">Schreiben Sie mich an!</p>
             <div>
-                <form>
+                <form id="form" novalidate>
                     <div class="row mb-4">
                         <div class="col">
-                            <input type="text" class="form-control" placeholder="Voller Name*" aria-label="Voller Name">
+                            <input type="text" name="fullName" id="fullName" class="form-control" placeholder="Voller Name*" required>
                         </div>
                         <div class="col">
-                            <input type="email" class="form-control" placeholder="Email*">
+                            <input type="email" name="Email" id="Email" class="form-control" placeholder="Email*" required>
                         </div>
                     </div>
-                    <div class="mb-4">
-                        <input class="form-control" type="text" placeholder="Betreff*" aria-label="default input example">
-                    </div>
-                    <div class="mb-5">
-                        <input class="form-control" type="file" multiple>
-                    </div>
-                    <div class="">
-                        <textarea class="form-control" type="text" placeholder="Nachricht*" rows="5"></textarea>
-                    </div>
                     <div>
-                        <button type="submit" class="btn subtitle rounded-pill btn-light py-sm-2 px-sm-5 my-sm-5 w-214p">Absenden</button>
+                        <input type="text" name="Betreff" id="Betreff" class="form-control mb-4" placeholder="Betreff*" required>
+                        <input type="file" name="fileDownload" id="fileDownload" class="form-control mb-5" multiple>
+                        <textarea type="text" name="textblock" id="textblock" class="form-control" placeholder="Nachricht*" rows="5" required></textarea>
                     </div>
+                    <span class="errorMsg mt-2 mb-1" id="errorMsg"></span>
+                    <button class="btn subtitle rounded-pill btn-light py-sm-2 px-sm-5 my-sm-5 w-214p">Absenden</button>
                 </form>
             </div>
         </div>

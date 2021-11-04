@@ -389,7 +389,10 @@ header i{
     color: #505050;
     background-color: #fafafa;
 }
-
+    /*error Message*/
+    .errorMsg{
+        color: red;
+    }
 
 /* footer */
 footer .link{
