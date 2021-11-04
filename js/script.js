@@ -1,25 +1,13 @@
-const form = document.getElementById('form')
-const fullName = document.getElementById('fullName')
-const email = document.getElementById('Email')
-const betreff = document.getElementById('Betreff')
-const fileDownload = document.getElementById('fileDownload')
-const textblock = document.getElementById('textblock')
+const fullName = document.getElementById('fullname');
+const email = document.getElementById('Email');
+
+let formFields = [fullName, email]
 
 
-let checkForm = function () {
-    if (fullName === '' || fullName == null) {
-        document.getElementById(errorMsg) = "Alle mit * markierten Felder müssen ausgefüllt sein.";
-    }
-    if (email === '' || email == null) {
-        document.getElementById(errorMsg) = "Alle mit * markierten Felder müssen ausgefüllt sein.";
-    }
-    if (betreff === '' || betreff == null) {
-        document.getElementById(errorMsg) = "Alle mit * markierten Felder müssen ausgefüllt sein.";
-    }
-    if (fileDownload === '' || fileDownload == null) {
-        document.getElementById(errorMsg) = "Alle mit * markierten Felder müssen ausgefüllt sein.";
-    }
-    if (textblock === '' || textblock == null) {
-        document.getElementById(errorMsg) = "Alle mit * markierten Felder müssen ausgefüllt sein.";
+function errorMsg(){
+    if (document.getElementById('fullname').value == ""){
+        document.getElementById("errorTextMsg").innerHTML = "Alle mit * markierte Felder müssen ausgefüllt werden!";
+    } else {
+        window.document.forms[0].reset();
     }
 }

@@ -13,11 +13,11 @@
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/layout.css">
     <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js"></script>
 
     <!-- externe extras -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
     <link rel="stylesheet" href="https://use.typekit.net/npy6vmd.css">
-    <link rel="script" href="js/script.js">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
 
 
@@ -355,7 +355,7 @@
                 <form id="form" novalidate>
                     <div class="row mb-4">
                         <div class="col">
-                            <input type="text" name="fullName" id="fullName" class="form-control" placeholder="Voller Name*" required>
+                            <input type="text" name="fullname" id="fullname" class="form-control" placeholder="Voller Name*" required>
                         </div>
                         <div class="col">
                             <input type="email" name="Email" id="Email" class="form-control" placeholder="Email*" required>
@@ -366,8 +366,8 @@
                         <input type="file" name="fileDownload" id="fileDownload" class="form-control mb-5" multiple>
                         <textarea type="text" name="textblock" id="textblock" class="form-control" placeholder="Nachricht*" rows="5" required></textarea>
                     </div>
-                    <span class="errorMsg mt-2 mb-1" id="errorMsg"></span>
-                    <button class="btn subtitle rounded-pill btn-light py-sm-2 px-sm-5 my-sm-5 w-214p">Absenden</button>
+                    <p class="mt-2 mb-1" id="errorTextMsg"></p>
+                    <button type="button" onclick="errorMsg()" class="btn subtitle rounded-pill btn-light py-sm-2 px-sm-5 my-sm-5 w-214p">Absenden</button>
                 </form>
             </div>
         </div>

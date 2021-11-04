@@ -390,7 +390,7 @@ header i{
     background-color: #fafafa;
 }
     /*error Message*/
-    .errorMsg{
+    #errorTextMsg{
         color: red;
     }
 
