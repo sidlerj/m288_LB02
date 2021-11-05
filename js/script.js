@@ -9,12 +9,12 @@ function errorMsg() {
         document.getElementById("errorTextMsg").innerHTML = "Alle mit * markierte Felder müssen ausgefüllt werden!";
     } if (document.getElementById('email').value == "") {
         document.getElementById("errorTextMsg").innerHTML = "Alle mit * markierte Felder müssen ausgefüllt werden!";
-    } if (document.getElementById('Betreff').value == "") {
+    } if (document.getElementById('betreff').value == "") {
         document.getElementById("errorTextMsg").innerHTML = "Alle mit * markierte Felder müssen ausgefüllt werden!";
     } if (document.getElementById('textblock').value == "") {
         document.getElementById("errorTextMsg").innerHTML = "Alle mit * markierte Felder müssen ausgefüllt werden!";
     } else {
         document.getElementById("errorTextMsg").innerHTML = "";
+        return window.document.forms[0].reset();
     }
-    return window.document.forms[0].reset();
 }
