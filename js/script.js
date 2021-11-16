@@ -8,6 +8,7 @@ const textblock = document.getElementById('textblock');
 const errorText = document.getElementById('errorTextMsg');
 const absendenButton = document.getElementById('absenden');
 
+let formFields = [fullName, email]
 
 
 function showErrorMsg() {
