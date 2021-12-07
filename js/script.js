@@ -8,10 +8,12 @@ const textblock = document.getElementById('textblock');
 const errorText = document.getElementById('errorTextMsg');
 const absendenButton = document.getElementById('absenden');
 
-let formFields = [fullName, email]
+//let formFields = [fullName, email]
 
 
 function showErrorMsg() {
+    let contact;
+
     if(fullname.value === '') {
         errorText.innerHTML = 'Alle mit * markierte Felder müssen ausgefüllt werden!';
     }
@@ -26,6 +28,12 @@ function showErrorMsg() {
     }
     else{
         errorText.innerHTML = 'Das Formular wurde erfolgreich abgeschickt.';
+        contact = {
+            VollerName: fullname.value,
+            Email: email.value
+        }
+
+        console.log(contact);
     }
 }
 
