@@ -348,7 +348,6 @@
     </div>
 
     <div class="container-mx row" id="kontakt">
-        <button type="button" onclick="autofill()">autofill</button> <!-- autofilled wird und die Funktion autofill auf klick ausgeführt wird.-->
         <h2>Kontakt</h2>
         <p class="lead-text-small">Schreiben Sie mich an!</p>
         <div>
@@ -367,7 +366,14 @@
                     <textarea type="text" name="required" id="textblock" class="form-control" placeholder="Nachricht*" rows="5" required></textarea>
                 </div>
                 <p class="mt-3 mb-0 " id="errorTextMsg"></p>
-                <button id="absenden" type="button" onclick="showErrorMsg()" class="btn subtitle rounded-pill btn-light py-sm-2 px-sm-5 my-sm-5 w-214p">Absenden</button>
+                <div class="row">
+                    <div class="col-3">
+                        <button id="absenden" type="button" onclick="showErrorMsg()" class="btn subtitle rounded-pill btn-light py-sm-2 px-sm-5 my-sm-5 w-214p">Absenden</button>
+                    </div>
+                    <div class="col-7">
+                        <button type="button" onclick="autofill()" class="btn subtitle rounded-pill btn-light py-sm-2 px-sm-5 my-sm-5 w-214p">Beispiel</button> <!-- autofilled wird und die Funktion autofill auf klick ausgeführt wird.-->
+                    </div>
+                </div>
             </form>
         </div>
     </div>

@@ -1,5 +1,10 @@
 /* hintergrundmusik */
 
+/* navigation */
+.nav.scrolled {
+    background-color: #020202;
+    transition: background-color 200ms linear;
+}
 
 /* icon */
 .bi:hover{
@@ -391,9 +396,12 @@ header i{
 }
     /*error Message*/
     #errorTextMsg{
-        color: red;
+        color: #d54141;
     }
-    /*
+    /*Formular abgesendet*/
+    .sendFormular{
+        color: green;
+    }
 
 /* footer */
 footer .link{
