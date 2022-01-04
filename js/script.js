@@ -10,9 +10,22 @@ const absendenButton = document.getElementById('absenden');
 
 //let formFields = [fullName, email]
 
-let autofillData = '{"name":"Max Muster", "email":"max.muster@example.com", "betreff":"example betreff", "nachricht":"example nachricht"}' //Json erstellt und in var eigefügt
-const autofillClass = JSON.parse(autofillData); //nutzbar gemacht für js
+/**
+ *
+ * @type {string}
+ */
+//Json erstellt und in var eigefügt
+let autofillData = '{"name":"Max Muster", "email":"max.muster@example.com", "betreff":"example betreff", "nachricht":"example nachricht"}';
 
+/**
+ *
+ * @type {any}
+ */
+// Objekt autofill wird erstellt //nutzbar gemacht für js
+const autofillClass = JSON.parse(autofillData);
+
+
+// Füllt Formular aus (Hohlt values aus JSON Objekt)
 function autofill() {
     document.getElementById('fullname').value = autofillClass.name;
     document.getElementById('email').value = autofillClass.email;
@@ -20,6 +33,8 @@ function autofill() {
     document.getElementById('textblock').value = autofillClass.nachricht;
 }
 
+
+//Validation von Formular
 function showErrorMsg() {
     let contact;
 
