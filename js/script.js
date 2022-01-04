@@ -13,6 +13,7 @@ const absendenButton = document.getElementById('absenden');
 let autofillData = '{"name":"Max Muster", "email":"max.muster@example.com", "betreff":"example betreff", "nachricht":"example nachricht"}' //Json erstellt und in var eigefügt
 const autofillClass = JSON.parse(autofillData); //nutzbar gemacht für js
 
+/
 function autofill() {
     document.getElementById('fullname').value = autofillClass.name;
     document.getElementById('email').value = autofillClass.email;
